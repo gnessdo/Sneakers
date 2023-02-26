@@ -1,43 +1,45 @@
-function Drawer() {
+
+function Drawer(props) {
     return (
-        <div style={{ display: "none" }} className="overlay">
+        <div className="overlay">
             <div className="drawer">
                 <h2 className="d-flex justify-between mb-30">
-                    Basket <img width={20} height={20} className="cu-p" src="/img/icons/btn-remove.svg" alt="Remove" />
+                    Basket {' '}
+                    <img onClick={props.onClose} width={20} height={20} className="cu-p" src="/img/icons/btn-remove.svg" alt="Close" />
                 </h2>
 
                 <div className="items">
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{ backgroundImage: 'url(/img/sneakers/1.png' }}
+                            style={{ backgroundImage: 'url(/img/sneakers/1.jpg' }}
                             className="cartItemImg"></div>
 
                         <div className="mr-20 flex">
-                            <p className="mb-5s">Nike Air Max for mens</p>
-                            <b>79 99 azn.</b>
+                            <p className="mb-5s">Nike Air force for men</p>
+                            <b>249 99 azn.</b>
                         </div>
                         <img width={25} height={25} className="removeBtn" src="/img/icons/btn-remove.svg" alt="Remove" />
                     </div>
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{ backgroundImage: 'url(/img/sneakers/1.png' }}
+                            style={{ backgroundImage: 'url(/img/sneakers/2.jpg' }}
                             className="cartItemImg"></div>
 
                         <div className="mr-20 flex">
-                            <p className="mb-5s">Nike Air Max for mens</p>
-                            <b>79 99 azn.</b>
+                            <p className="mb-5s">Nike Air Max 270</p>
+                            <b>279.99 azn.</b>
                         </div>
                         <img width={25} height={25} className="removeBtn" src="/img/icons/btn-remove.svg" alt="Remove" />
                     </div>
 
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{ backgroundImage: 'url(/img/sneakers/1.png' }}
+                            style={{ backgroundImage: 'url(/img/sneakers/3.jpg' }}
                             className="cartItemImg"></div>
 
                         <div className="mr-20 flex">
-                            <p className="mb-5s">Nike Air Max for mens</p>
-                            <b>79 99 azn.</b>
+                            <p className="mb-5s">onClickCart</p>
+                            <b>149.99 azn.</b>
                         </div>
                         <img width={25} height={25} className="removeBtn" src="/img/icons/btn-remove.svg" alt="Remove" />
                     </div>
